@@ -1,0 +1,24 @@
+#titulo{
+    background-color: lightblue;
+    text-align: center;
+}
+#corpo{
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#contato{
+    background-color: aqua;
+}
+.contato{
+    text-align: center;
+}
+button:hover{
+    background-color: grey;
+}
+#botaonext{
+    margin-left: 90%;
+}
+body{
+    
+}
