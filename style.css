@@ -12,7 +12,7 @@
 #contato{
     background-color: aqua;
 }
-.faep{
+.faep, .home, #botaonext{
     float: right;
 }
 .contato{
