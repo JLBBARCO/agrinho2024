@@ -22,3 +22,9 @@
 button:hover{
     background-color: grey;
 }
+.receita{
+    text-align: center;
+}
+img{
+    border-radius: 10%;
+}
