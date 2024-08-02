@@ -1,5 +1,5 @@
 #topo{
-    background-color: lightblue;
+    background-color: aqua;
     text-align: center;
     font-family: sans-serif;
 }
@@ -10,7 +10,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 #contato{
-    background-color: aqua;
+    background-color: green;
 }
 .faep, .home, #botaonext{
     float: right;
@@ -27,4 +27,7 @@ button:hover{
 }
 img{
     border-radius: 10%;
+}
+body{
+    background-color: rgb(224, 255, 243);
 }
