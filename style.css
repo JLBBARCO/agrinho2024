@@ -1,33 +1,54 @@
 #topo{
-    background-color: rgb(134, 228, 134);
-    text-align: center;
-    font-family: sans-serif;
+    background-color: rgb(134, 228, 134); /* adiciona cor de fundo à barra superior */
+    text-align: center; /* alinha o texto no centro */
+    font-family: sans-serif; /* transforma a fonte da barra superior em sans-serif */
 }
 #corpo{
-    text-align: justify;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-family: 'Times New Roman', Times, serif;
+    text-align: justify; /* alinha o texto no formato JUSTIFICADO */
+    margin-left: 5%; /* margem esquerda de 5% para acessibilidade em todos os dispositivos */
+    margin-right: 5%; /* margem direita de 5% para acessibilidade em todos os dispositivos */
+    font-family: 'Times New Roman', Times, serif; /* transforma a fonte do corpo do site em Times New Roman */
 }
 #contato{
-    background-color: green;
+    background-color: green; /* adiciona fundo verde ao rodapé */
 }
-.faep, .home, #botaonext{
-    float: right;
+.faep, .home{
+    float: right; /* alinha a logo da FAEP e botão HOME à direita da página */
 }
 .contato{
-    text-align: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center; /* alinha o texto do rodapé no centro */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* trasnforma a formatação de letra do rodapé para APPLE-SYSTEM */
 }
 button:hover{
-    background-color: grey;
+    background-color: grey; /* transforma o fundo dos botões em cinza ao passar o mouse */
 }
 .receita{
-    text-align: center;
+    text-align: center; /* alinha ao centro, o botão que leva à página de receitas */
 }
-img{
-    border-radius: 10%;
+.imgcorpo{
+    border-radius: 10%; /* adiciona arredondamento de cantos em 10% das imagens do index.html */
+    height: 250px; /* limita a altura padrão em 250px das imagens do index.html */
 }
 body{
-    background-color: rgb(224, 255, 243);
+    background-color: rgb(224, 255, 243); /* adiciona fundo levemente esverdiado ao fundo de todas as páginas */
+}
+#corporeceita {
+    display: flex; /* Reduz o tamanho da partição */
+    gap: 10px; /* Adiciona espaçamento entre partições */
+}
+
+.receitas {
+    flex: 1; /* Padroniza o tamanho das partições */
+    height: 350px; /* Adiciona uma altura padrão nas partições */
+    box-shadow: 0 4px 8px 0 #ababab; /* Adiciona fundo e bordas esfumaçadas */
+    text-align: center; /* Alinha o texto no centro da partição */
+}
+
+.receitas:hover {
+    flex: 2; /* Aumenta o tamanho da partição ao passar o mouse */
+}
+
+.imgreceitas {
+    width: 50%; /* define a largura da imagem */
+    height: 50%; /* define a altura da imagem */
 }
