@@ -48,7 +48,17 @@ body{
     flex: 2; /* Aumenta o tamanho da partição ao passar o mouse */
 }
 
-.imgreceitas {
+.imgreceita {
     width: 50%; /* define a largura da imagem */
     height: 50%; /* define a altura da imagem */
+}
+@media(max-width: 450px) {
+    .imgcorpo, .imgreceitas{
+        height: 90%;
+        width: 90%;
+    }
+    .imgreceita{
+        height: 40%;
+        width: 80%;
+    }
 }
