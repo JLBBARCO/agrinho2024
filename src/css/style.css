@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+:root {
+    --text-color: #333;
+    --primary-color: #86e486;
+    --secondary-color: #008000;
+    --background-color: #e0fff3;
+    --button-hover-background: #808080;
+    --shadow: 0 4px 8px 0 #ababab;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--button-hover-background);
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+p {
+    color: var(--text-color);
+    text-align: justify;
+    line-height: 1.6rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+header a {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+main>section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    min-height: 75dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section:nth-child(odd) {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+main>section:nth-child(even) {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+main>section h2 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+main>section p {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main>section>article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--button-hover-background);
+    box-shadow: 0 6px 12px 0 #ababab;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin: 20px 0;
+    width: 100%;
+    max-width: none;
+    transition-duration: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px 0 #ababab;
+    transform: translateY(-5px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    box-shadow: var(--shadow);
+}
+
+.card h3 {
+    margin: 1rem 0 1rem 0;
+    color: var(--primary-color);
+}
+
+.card p {
+    padding: 0 20px 20px 20px;
+    text-align: justify;
+}
+
+#contato h3 {
+    margin-top: 1rem;
+}
+
+.contato-list {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    padding: 20px;
+}
+
+.contato-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    color: var(--text-color);
+    width: 100%;
+    margin: 1rem;
+}
+
+.contato-link:hover {
+    color: var(--secondary-color);
+}
+
+.contato-icon {
+    width: 28px;
+    height: 28px;
+    box-shadow: none;
+    border-radius: 0;
+    flex: 0 0 auto;
+}
+
+.receita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin: 20px 0;
+    padding: 20px;
+    width: 100%;
+    max-width: none;
+}
+
+.receita:hover {
+    box-shadow: 0 6px 12px 0 #ababab;
+    transform: translateY(-5px);
+}
+
+.containerBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+img.img-propaganda {
+    max-width: 350px;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+}
